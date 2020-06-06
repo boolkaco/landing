@@ -1,32 +1,85 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div class="bg-illustration">
+      <img
+        src="./assets/illustration-section-01.svg"
+        alt="illustration"
+      >
     </div>
+
+    <ul class="nav container">
+      <li class="nav__logo-wrp">
+        <img
+          class="nav__logo"
+          src="./assets/logo.svg"
+          alt="logo"
+        >
+      </li>
+      <li class="nav__item">
+        <a
+          href="https://google.com"
+          class="flat-link"
+        >
+          Secondary page
+        </a>
+      </li>
+      <li class="nav__item">
+        <a
+          href="https://google.com"
+          class="primary-link"
+        >
+          Sign up
+        </a>
+      </li>
+    </ul>
     <router-view/>
   </div>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
+  body {
+    box-sizing: border-box;
+    margin: 0;
+    background-color: #16171B;
     color: #2c3e50;
+    overflow-x: hidden;
+  }
 
-    &.router-link-exact-active {
-      color: #42b983;
+  .nav {
+    height: 80px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    .nav__logo-wrp {
+      display: flex;
+      flex: 1 1 auto;
+    }
+
+    .nav__item {
+      flex: 0 1 auto;
     }
   }
-}
+
+  #app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+  }
+
+  .bg-illustration {
+    top: 0;
+    position: absolute;
+    z-index: -1;
+
+    @media (max-width: 821px) {
+      right: -250%;
+    }
+
+    @media (min-width: 821px) {
+      right: -35%;
+    }
+  }
 </style>
