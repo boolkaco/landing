@@ -2,7 +2,7 @@
   <div id="app">
     <div class="bg-illustration">
       <img
-        src="./assets/illustration-section-01.svg"
+        src="./assets/illustration-section-01.png"
         alt="illustration"
       >
     </div>
@@ -42,6 +42,9 @@
     margin: 0;
     background-color: #16171B;
     color: #2c3e50;
+  }
+
+  html, body {
     overflow-x: hidden;
   }
 
@@ -75,11 +78,11 @@
     z-index: -1;
 
     @media (max-width: 821px) {
-      right: -250%;
+      left: 50%;
     }
 
     @media (min-width: 821px) {
-      right: -35%;
+      left: 60%;
     }
   }
 </style>
