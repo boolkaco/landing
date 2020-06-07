@@ -150,7 +150,7 @@
 
         <div class="s-row">
           <span class="copyright">
-            © {{ dateNow }} Denis huesos, all rights reserved
+            © {{ dateNow }} Denis pisos, all rights reserved
           </span>
 
           <div class="footer__links">
