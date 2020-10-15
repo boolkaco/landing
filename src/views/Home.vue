@@ -1,13 +1,12 @@
 <template>
   <div>
     <div class="container">
-
       <div class="main-header padding border-separator">
         <div class="main-header__wrapper">
-          <h1>Lorem ipsum dolor sit amet, consectetur</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam asperiores eligendi et hic, illum labore laudantium mollitia nemo nihil pariatur placeat possimus quam quas quidem rerum sapiente. Odio, reiciendis?</p>
+          <h1>{{ $t('welcome.title') }}</h1>
+          <p>{{ $t('welcome.subtitle') }}</p>
           <a href="#" class="primary-link">
-            Get started now
+            {{ $t('welcome.getStarted') }}
           </a>
         </div>
       </div>
@@ -20,7 +19,7 @@
           v-for="item in 5"
           :key="item"
         >
-          Twitter
+          {{ $t('partners.twitter') }}
         </div>
       </div>
 
@@ -31,9 +30,11 @@
           data-aos="fade-up"
           class="head"
         >
-          <h2>Built exclusively for you</h2>
+          <h2>
+            {{ $t('videoPlaceholder.title') }}
+          </h2>
           <p>
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint — occaecat cupidatat non proident, sunt in culpa qui.
+            {{ $t('videoPlaceholder.subtitle') }}
           </p>
         </div>
         <div
@@ -52,9 +53,11 @@
           data-aos-anchor=".scrollfix-anchor"
           class="head"
         >
-          <h2>Built exclusively for you</h2>
+          <h2>
+            {{ $t('advantages.title') }}
+          </h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus commodi consequuntur corporis cupiditate dolorem dolorum eius illo ipsum laboriosam laudantium maiores mollitia neque nobis quae quos, vel veniam voluptatum!
+            {{ $t('advantages.subtitle') }}
           </p>
         </div>
 
@@ -79,9 +82,11 @@
                 </div>
               </div>
               <div class="grid-item__content">
-                <h4>Generate Leads</h4>
+                <h4>
+                  {{ $t(`advantages.reasons[${item - 1}].title`) }}
+                </h4>
                 <p>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
+                  {{ $t(`advantages.reasons[${item - 1}].description`) }}
                 </p>
               </div>
             </div>
@@ -94,9 +99,11 @@
           data-aos="fade-up"
           class="head"
         >
-          <h2>Don't take our word for it</h2>
+          <h2>
+            {{ $t('customerReviews.title') }}
+          </h2>
           <p>
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint — occaecat cupidatat non proident, sunt in culpa qui.
+            {{ $t('customerReviews.subtitle') }}
           </p>
         </div>
 
@@ -109,14 +116,18 @@
           >
             <div class="item__review">
               <div class="review__message">
-                - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab asperiores commodi corporis explicabo illo ipsa ipsam libero nisi non, obcaecati, officia possimus quae quaerat quo sit soluta velit veritatis voluptas!
+                - {{ $t(`customerReviews.reviews[${item - 1}].message`) }}
               </div>
 
               <div class="review__author">
-                <span class="author__name">Diana Rynzhuk</span>
+                <span class="author__name">
+                  {{ $t(`customerReviews.reviews[${item - 1}].author`) }}
+                </span>
                 <span class="author__separator">/</span>
                 <span class="author__app-name">
-                  <a href="#">AppName</a>
+                  <a href="#">
+                    {{ $t(`customerReviews.reviews[${item - 1}].appName`) }}
+                  </a>
                 </span>
               </div>
             </div>
@@ -150,23 +161,31 @@
 
         <div class="s-row">
           <span class="copyright">
-            © {{ dateNow }} Denis pisos, all rights reserved
+            © {{ dateNow }} {{ $t('footer.copyright') }}
           </span>
 
           <div class="footer__links">
             <a class="links__item">
-              <span>Contact</span>
+              <span>
+                {{ $t('footer.links.contact') }}
+              </span>
             </a>
             <a class="links__item">
-              <span>About us</span>
+              <span>
+                {{ $t('footer.links.aboutUs') }}
+              </span>
             </a>
 
             <a class="links__item">
-              <span>FAQ's</span>
+              <span>
+                {{ $t('footer.links.faq') }}
+              </span>
             </a>
 
             <a class="links__item">
-              <span>Support</span>
+              <span>
+                {{ $t('footer.links.support') }}
+              </span>
             </a>
           </div>
         </div>
