@@ -1,44 +1,44 @@
 export const messages = {
   ru: {
     welcome: {
-      title: 'Lorem ipsum dolor sit amet, consectetur',
-      subtitle: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam asperiores eligendi et hic, illum labore laudantium mollitia nemo nihil pariatur placeat possimus quam quas quidem rerum sapiente. Odio, reiciendis?',
-      getStarted: 'Get started now'
+      title: 'EatBest - твой лучший официант',
+      subtitle: 'Найти ресторан, ознакомиться с меню, прочесть отзывы, совершить заказ - EatBest',
+      getStarted: 'Запустить в Telegram'
     },
     partners: {
-      twitter: 'Twitter'
+      twitter: '+++'
     },
     videoPlaceholder: {
-      title: 'Built exclusively for you',
-      subtitle: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint — occaecat cupidatat non proident, sunt in culpa qui.'
+      title: 'Наслаждайся общением, для остального есть EatBest',
+      subtitle: 'Сервис создан с целью упрощения взаимодействия с ресторанами. Все общение с персоналом заведения, при желании, можно исключить. При этом получив всё, чего хотите от вечера всего в пару кликов. Убедитесь в этом сами.'
     },
     advantages: {
-      title: 'Built exclusively for you',
-      subtitle: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus commodi consequuntur corporis cupiditate dolorem dolorum eius illo ipsum laboriosam laudantium maiores mollitia neque nobis quae quos, vel veniam voluptatum!',
+      title: 'Почувствуй себя VIP-клиентом, ведь о твоих вкусах знают заранее.',
+      subtitle: 'Функционал сервиса сопровождает тебя на каждом этапе, словно личный помощник',
       reasons: [
         {
-          title: 'Generate Leads123123',
-          description: '1Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.'
+          title: 'Лучший повар твоей любимой кухни',
+          description: 'Быстрый подбор ресторана по оценкам кухни от гостей'
         },
         {
-          title: 'Generate Leads',
-          description: '2Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.'
+          title: 'Идеальная атмосфера к особому случаю',
+          description: 'Подбор ресторанов с романтической или деловой атмосферой'
         },
         {
-          title: 'Generate Leads',
-          description: '3Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.'
+          title: 'Адаптация блюда к твоему вкусу',
+          description: 'Добавь примечание к заказу и скорректируй состав блюда'
         },
         {
-          title: 'Generate Leads',
-          description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.'
+          title: 'Тебя всегда понимают',
+          description: 'Функционал сервиса позволяет осуществить заказ автономно, вплоть до исключения общения с персоналом'
         },
         {
-          title: 'Generate Leads',
-          description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.'
+          title: 'Карта клиента всегда с собой',
+          description: 'Прикрепи к сервису свою бонусную карту и она всегда будет под рукой'
         },
         {
-          title: 'Generate Leads',
-          description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.'
+          title: 'Тебе всегда есть где поесть',
+          description: 'Сервис всегда найдет ближайшие рестораны к твоей локации'
         }
       ]
     },
